@@ -1,0 +1,26 @@
+.body {
+    font-family: Arial, sans-serif;
+}
+.box {
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    color: black;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+.blue {
+    background-color: #00FFFF;
+    color: black;
+    border: 3px solid black;
+}
+.green {
+    background-color: #71CA71;
+    color: black;
+    border: 3px solid black;
+}
+.purple {
+    background-color: #C413C4;
+    border: 3px solid black;
+}
