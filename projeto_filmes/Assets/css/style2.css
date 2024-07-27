@@ -5,7 +5,7 @@ body {
     width: 100%;
     position: relative;
     background: url(../img/fundonet.jpg) no-repeat center center/cover;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Netflix Sana1','Helvetica Neue','Segoe UI','Roboto Ubuntu', 'sans serif' ;
 }
 
 body::before {
@@ -79,7 +79,7 @@ body::before {
     font-weight: bold;
     font-size: 16px;
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .login_body button:hover {
