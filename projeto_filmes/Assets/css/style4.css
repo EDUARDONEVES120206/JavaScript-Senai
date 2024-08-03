@@ -1,0 +1,113 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000000;
+  font-family: "Netflix Sana1", "Helvetica Neue", "Segoe UI", "Roboto Ubuntu",
+    "sans serif";
+  box-sizing: border-box;
+  line-height: 1.4;
+  position: relative;
+}
+h1 {
+  margin-left: 490px;
+  margin-top: -20px;
+  font-weight: 500;
+  font-size: 32px;
+  word-spacing: 0px;
+}
+h5 {
+  margin-left: 490px;
+  margin-top: -10px;
+  font-size: 13px;
+  font-weight: 19px;
+}
+.container {
+  display: inline-flex;
+  margin-left: 490px;
+}
+.logoheader {
+  margin-top: -70px;
+  margin-left: -70px;
+  height: 245px;
+  width: 407px;
+}
+.card {
+  border: #cccccc;
+  border-style: solid;
+  width: 321px;
+  height: 631px;
+  margin: 3px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card-header {
+  background: linear-gradient(135deg, #274B9C,#613CD3);
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-header2 {
+  background: linear-gradient(135deg,#234C9C , #A439D5);
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-header3 {
+  background: linear-gradient(135deg, #224F9D, #D11225);
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-content {
+  padding: 30px;
+  background-color: white;
+  color: #333;
+}
+.card-content p {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.card-content p:last-child {
+  border-bottom: none;
+}
+button {
+    height: 50px;
+    width: 440px;
+    color: #fff;
+    background-color: #E50914;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 20px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 25px;
+}
+
+button:hover {
+    background-color: #fc1722;
+    cursor: pointer;
+}
+

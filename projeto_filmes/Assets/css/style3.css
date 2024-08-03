@@ -13,9 +13,8 @@ body {
 }
 
 .background {
-  width: 1360px;
+  width: 1920px;
   height: 687px;
-  background-image: url("/Assets/img/firecountry.jpeg");
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -187,77 +186,6 @@ header {
   position: relative;
 }
 
-.serie1 {
-  background-image: url("../img/pontocego.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: calc(70%);
-}
-
-.serie2 {
-  background-image: url("../img/cobrakai.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: calc(70%);
-}
-
-.serie3 {
-  background-image: url("../img/vikings.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: calc(70%);
-}
-
-.serie4 {
-  background-image: url("../img/criminosos.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: calc(70%);
-}
-
-.serie5 {
-  background-image: url("../img/nanatsu.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: calc(70%);
-}
-
-.serie6 {
-  background-image: url("../img/one\ piece.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: calc(70%);
-}
-
-.serie7 {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw2QSsWf8jPkvhnveSEL0l92txjpS765Zb-t7tDivmCEr7tub9DqyT3DFvcSql6FjmjqI&usqp=CAU");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: calc(70%);
-}
-
-.serie8 {
-  background-image: url("https://play-lh.googleusercontent.com/3rktUiKGtQkOCsU9OJVKWbdS5rNDx-bR8pPGKPSC9S9DpA8qDsjaIpqemGquDr9DiRh-m3EIfp5FKKRRSMw");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: calc(70%);
-}
-
-.serie9 {
-  background-image: url("");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: calc(70%);
-}
 
 .button-container {
   display: flex;
@@ -305,7 +233,7 @@ button:hover {
   width: 30px;
   height: 30px;
   border-radius: 2px;
-  margin-left: 1250px;
+  margin-left: 1750px;
   top: 27px;
 }
 
