@@ -1,30 +1,85 @@
-function desafio1(n1) {
-    var n1 = parseInt((prompt('digite um número')));
-    alert('antecessor de ' + (n1) + ' é ' + (n1 - 1) + ' e seu sucessor é ' + (n1 + 1))
-}
+//1
 
-function desafio2(n1) {
-    var n1 = parseFloat(prompt('digite um número'));
-    alert('dobro ' + n1 * 2 + ' triplo = ' + n1 * 3 + ' raiz quadrada ' + Math.sqrt(n1))
-}
-function desafio3() {
-    var nota1 = parseInt((prompt('digite nota 1')))
-    var nota2 = parseInt((prompt('digite nota 2')))
-    let media = parseFloat((nota1 + nota2) / 2)
-    alert('primeira nota = ' + nota1 + ' segunda = ' + nota2 + ', média =  ' + media)
-}
-function desafio4() {
-    var metros = parseFloat(prompt('digite metros'))
-    alert('metros = ' + metros + ' centimetros =' + metros * 100 + ' milímetros = ' + metros * 1000)
-}
-function desafio5() {
-    var tabuada = parseFloat(prompt('digite número da tabuada'))
-    console.log('tabuada do número ' + tabuada)
-    for (var i = 1; i <= 10; i++) {
-        alert(i + ' * ' + tabuada + ' = ' + i * tabuada)
+document.getElementById('desafio1').addEventListener('submit', function (event) {
+
+    const numero = parseInt(document.getElementById('numero').value);
+    if (isNaN(numero)) {
+        document.getElementById('resultado').innerHTML = '<p style="color:red;">Por favor, digite um número válido.</p>';
+    } else {
+        const antecessor = numero - 1;
+        const sucessor = numero + 1;
+        document.getElementById('resultado').innerHTML = `<p>O antecessor de ${numero} é ${antecessor} e o sucessor é ${sucessor}.</p>`;
     }
-}
-function desafio6(real) {
-    var real = (prompt('digite seu dinheiro'))
-    alert('com esse dinheiro vc tem ' + real / 5, 47 + 'Dolares')
-}
+});
+
+//2
+
+document.getElementById('desafio2').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const numero = parseInt(document.getElementById('numero2').value);
+    if (isNaN(numero)) {
+        document.getElementById('resultado2').innerHTML = '<p style="color:red;">Por favor, digite um número válido.</p>';
+    } else {
+        const dobro = numero * 2;
+        const triplo = numero * 3;
+        const raiz = Math.sqrt(numero)
+        document.getElementById('resultado2').innerHTML = `<p>O dobro de ${numero} é ${dobro}, seu triplo é ${triplo}, sua raiz é ${raiz} </p>`;
+    }
+});
+
+
+//3
+document.getElementById('desafio3').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const numero3 = parseInt(document.getElementById('numero3').value)
+    const numero4 = parseInt(document.getElementById('numero4').value)
+    if (isNaN(numero3)) {
+        document.getElementById('resultado3').innerHTML = '<p style="color:red;">Por favor, digite um número válido.</p>';
+    }
+    else {
+        const media = (numero3 + numero4) / 2;
+        document.getElementById('resultado3').innerHTML = `<p>A sua media é ${media} </p> `;
+    }
+});
+
+//4
+document.getElementById('desafio4').addEventListener('submit', function (event) {
+
+    const numero5 = parseInt(document.getElementById('numero5').value);
+    if (isNaN(numero5)) {
+        document.getElementById('resultado4').innerHTML = '<p style="color:red;">Por favor, digite um número válido.</p>';
+    } else {
+        const centimetros = numero5 * 100;
+        const milimetros = numero5 * 1000;
+        document.getElementById('resultado4').innerHTML = `<p>O valor em metros ${numero5} em centimentro e ${centimetros} em milimetros é ${milimetros}.</p>`;
+    }
+});
+//5
+document.getElementById('desafio5').addEventListener('submit', function (event) {
+
+    const numero6 = parseInt(document.getElementById('numero6').value);
+    let i = 0
+    if (isNaN(numero6)) {
+        document.getElementById('resultado5').innerHTML = '<p style="color:red;">Por favor, digite um número válido.</p>';
+    } else {
+        while (i <= 10) {
+            document.getElementById('resultado5').innerHTML += `<p>(${numero6} x ${i} = ${numero6 * i})</p>`;
+            i++;
+        }
+    }
+});
+// 6
+document.getElementById('desafio6').addEventListener('submit', function (event) {
+
+    const numero7 = parseFloat(document.getElementById('numero7').value);
+    if (isNaN(numero7)) {
+        document.getElementById('resultado6').innerHTML = '<p style="color:red;">Por favor, digite um número válido.</p>';
+    } else {
+        const dolar = 5
+        const saldodolar = numero7 / dolar
+        document.getElementById('resultado6').innerHTML = `<p>o seu saldo em dolar seria ${saldodolar} dolares <p>`;
+    }
+});
+
+
