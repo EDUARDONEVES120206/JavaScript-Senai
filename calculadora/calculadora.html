@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="style2.css" media="screen" />
+</head>
+
+<body>
+    <div class="box">
+            <h4>Calculadora </h4>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select id="oper">
+                          <option value="" disabled selected>escolha a operação</option>
+                          <option id=1 value="1">Soma</option>
+                          <option id=2 value="2">subtração</option>
+                          <option id=3 value="3">multiplicação</option>
+                          <option id=4 value="4">divisao</option>
+                        </select>
+                      </div>
+                    <div class="input-field col s6">
+                        <input placeholder="Digite o primeiro número" id="numero1" type="text" class="validate">
+                        <input placeholder="Digite o segundo número" id="numero2" type="text" class="validate">
+                        <button class="btn modal-trigger" type="submit" id="calcular">calcular</button>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <div id="resultado" class="row" style="margin-top: 400px; margin-left: -560px">
+
+            </div>
+        </div>
+    </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('select');
+                M.FormSelect.init(elems);
+            });
+        
+            document.getElementById('calcular').addEventListener('click', function () {
+                event.preventDefault();
+                const oper = parseInt(document.getElementById('oper').value);
+                const numero1 = parseInt(document.getElementById('numero1').value);
+                const numero2 = parseInt(document.getElementById('numero2').value);
+        
+                if (isNaN(numero1) || isNaN(numero2)) {
+                    document.getElementById('resultado').innerHTML = '<p style="color:red;">Por favor, digite números válidos.</p>';
+                    return;
+                }
+        
+                let resultado;
+                switch (oper) {
+                    case 1:
+                        resultado = numero1 + numero2;
+                        document.getElementById('resultado').innerHTML = `<p>O resultado da soma é ${resultado}</p>`;
+                        break;
+                    case 2:
+                        resultado = numero1 - numero2;
+                        document.getElementById('resultado').innerHTML = `<p>O resultado da subtração é ${resultado}</p>`;
+                        break;
+                    case 3:
+                        resultado = numero1 * numero2;
+                        document.getElementById('resultado').innerHTML = `<p>O resultado da multiplicação é ${resultado}</p>`;
+                        break;
+                    case 4:
+                        resultado = numero1 / numero2;
+                        document.getElementById('resultado').innerHTML = `<p>O resultado da divisão é ${resultado}</p>`;
+                        break;
+                    default:
+                        document.getElementById('resultado').innerHTML = '<p style="color:red;">Selecione uma operação.</p>';
+                }
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
