@@ -1,0 +1,88 @@
+body{
+    background-color: white;
+}
+nav{
+    background-color: black;
+    color:  black;
+
+}
+.container-pizzas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1% ;
+    margin: 1%;
+    width: 95%;
+    max-width: 90%;
+}
+.card{
+    width: 18rem;
+     margin-left: 3%; 
+     box-shadow: 16px 8px 15px rgba(255, 0, 0, 0.795);
+
+}
+button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 7px 15px;
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #ff0000;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #ff0000;
+    
+  }
+.pedir{
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 7px 15px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #28A745;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #28A745;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #28A745;
+    
+  }
+.pedir:hover{
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #28A745;
+}
+.pedir:active{
+    border: 2px solid #28A745;
+    transform: scale(0.9);
+}
+  
+  button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #ff0000;
+  }
+  
+  button:active {
+    border: 2px solid #ff0000;
+    transform: scale(0.9);
+  }
+  .card{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 70%;
+    max-height: 2%;
+
+  }
